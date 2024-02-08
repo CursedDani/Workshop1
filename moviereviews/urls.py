@@ -20,5 +20,6 @@ from movie import views as mvw
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',mvw.home)
+    path('',mvw.home),
+    path('about',mvw.about)
 ]
