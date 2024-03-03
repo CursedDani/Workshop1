@@ -25,7 +25,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',mvw.home, name='home'),
     path('about',mvw.about, name='about'),
-    path('news/',include('news.urls'))
+    path('news/',include('news.urls')),
+    path('statistics/',mvw.statistics_view,name='statistics'),
+    path('signup/',mvw.signup, name='signup'),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
